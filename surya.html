@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .active-nav-link {
+            color: #0096FF !important; /* Or any highlight color you prefer */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- START HEADER SECTION -->
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:256214203215" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>256 214 203 215</span>
+                </a>
+                <a href="#" class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>258 Helano Street, New York</span>
+                </a>
+                <a href="#" class="contact-item">
+                    <i class="far fa-clock"></i>
+                    <span>Mon - Sat: 8:00 - 15:00</span>
+                </a>
+            </div>
+            <div class="social-links">
+                <span>Follow us:</span>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/imgs/header/logo.png" alt="">
+                    <h1 class="logotext">Online Educare </h1>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active-nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#courses" class="nav-link">Courses</a></li>
+                    <li><a href="#statistics" class="nav-link">Statistics</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-buttons">
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
+                <a href="#" class="btn btn-secondary">Login</a>
+            </div>
+            
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="overlay"></div>
+
+    <!-- END HEADER SECTION -->
+
+    <!-- START BANNER SECTION -->
+    
+    <section id="home" class="banner-section">
+        <div class="slider-container">
+            <!-- Slides -->
+            <div class="slide active" id="slide1">
+                <div class="content">
+                    <div class="discount-banner">GET DISCOUNT 25% DURING COVID - 19</div>
+                    <h1 class="title">Where Knowledge Meets Innovation and Dreams Become Reality.</h1>
+                    <p class="description">Grursus mal suada faci lisis Lorem ipsum dolarorit more that ametion fadolorit to the consectetur elit.</p>
+                    <div class="cta-buttons">
+                        <a href="#about" class="cta-button">
+                            Find Out More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#courses" class="cta-button">
+                            Browser Study Option
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" id="slide2">
+                <div class="content">
+                    <div class="discount-banner">SPRING ENROLLMENT OPEN NOW</div>
+                    <h1 class="title">Discover Your Potential with Expert-Led Courses Online.</h1>
+                    <p class="description">Join thousands of students achieving their goals through our flexible learning programs designed for the modern world.</p>
+                    <div class="cta-buttons">
+                        <a href="#courses" class="cta-button">
+                            Explore Courses
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#testimonials" class="cta-button">
+                            Student Success Stories
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide" id="slide3">
+                <div class="content">
+                    <div class="discount-banner">EARLY BIRD SPECIAL - 30% OFF</div>
+                    <h1 class="title">Building Skills for Tomorrow's Technology Leaders.</h1>
+                    <p class="description">Our cutting-edge curriculum prepares you for high-demand careers in a rapidly evolving digital landscape.</p>
+                    <div class="cta-buttons">
+                        <a href="#programs" class="cta-button">
+                            View Programs
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="cta-button">
+                            Talk to an Advisor
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Navigation dots -->
+            <div class="slider-nav">
+                <div class="slider-dot active" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+                <div class="slider-dot" data-slide="3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END BANNER SECTION -->
+
+    <!-- START ABOUT SECTION -->
+    
+    <section id="about" class="edcare-section">
+        <div class="aboutcontainer">
+            <div class="left-area">
+                <div class="about-experience-badge">
+                    <div class="about-number" id="counter">0</div>
+                    <div class="text">Years Of<br>Experience</div>
+                </div>
+                <div class="students-image-container">
+                    <img src="./assets/imgs/about/about-img-2.png" alt="Group of students" class="students-image">
+                </div>
+                <div class="main-image-container">
+                    <img src="./assets/imgs/about/about-img-1.png" alt="Student with headphones" class="main-image">
+                </div>
+            </div>
+            
+            <div class="right-area">
+                <div class="platform-badge">
+                    <span class="icon">⚡</span>
+                    About Our Platform
+                </div>
+                
+                <h2 class="section-title">Welcome to EdCare University</h2>
+                
+                <p class="section-description">
+                    The university provides excellent research opportunities, and I've had the chance to work on innovative projects that have enhanced my skills.
+                </p>
+                
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span class="feature-text">Tailor content and courses to meet the individual needs and learning</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span class="feature-text">Engage students through multimedia elements, quizzes, and hands-on activities</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span class="feature-text">Monitor student performance with dashboards that provide insights into learning</span>
+                    </li>
+                </ul>
+                
+                <div class="feature-boxes">
+                    <div class="feature-box">
+                        <span class="feature-box-icon">✓</span>
+                        <span class="feature-box-text">Flexible Classes</span>
+                    </div>
+                    <div class="feature-box">
+                        <span class="feature-box-icon">✓</span>
+                        <span class="feature-box-text">Learn From Anywhere</span>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="#courses" class="cta-button">
+                        Explore More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- END ABOUT SECTION -->
+
+     <!-- Placeholder sections for navigation links -->
+     <section id="courses" class="courses-section">
+        <!-- Your courses content will go here -->
+        <h2>Our Courses</h2>
+     </section>
+
+     <section id="statistics" class="statistics-section">
+        <!-- Your statistics content will go here -->
+        <h2>Our Statistics</h2>
+     </section>
+
+     <section id="blog" class="blog-section">
+        <!-- Your blog content will go here -->
+        <h2>Latest Blog Posts</h2>
+     </section>
+
+     <section id="contact" class="contact-section">
+        <!-- Your contact content will go here -->
+        <h2>Contact Us</h2>
+     </section>
+
+     <section id="programs" class="programs-section">
+        <!-- Your programs content will go here -->
+        <h2>Our Programs</h2>
+     </section>
+
+     <section id="testimonials" class="testimonials-section">
+        <!-- Your testimonials content will go here -->
+        <h2>Student Success Stories</h2>
+     </section>
+
+     <!-- JavaScript for smooth scrolling and active link highlighting -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all nav links
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Add click event listeners to all nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Get the target section id from the href attribute
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        // Scroll to the target section
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                        
+                        // Remove active class from all links
+                        navLinks.forEach(link => link.classList.remove('active-nav-link'));
+                        
+                        // Add active class to the clicked link
+                        this.classList.add('active-nav-link');
+                    }
+                });
+            });
+            
+            // Add scroll event listener to highlight the current section in the navigation
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                
+                // Get all sections
+                const sections = document.querySelectorAll('section[id]');
+                
+                // Check each section to see if we're currently scrolled to it
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100; // Offset to trigger a bit earlier
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        // Remove active class from all links
+                        navLinks.forEach(link => link.classList.remove('active-nav-link'));
+                        
+                        // Add active class to the corresponding nav link
+                        const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active-nav-link');
+                        }
+                    }
+                });
+            });
+            
+            // Make all CTA buttons use smooth scrolling
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId.startsWith('#')) {
+                        e.preventDefault();
+                        const targetSection = document.querySelector(targetId);
+                        if (targetSection) {
+                            targetSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+            
+            // For the counter in the about section
+            const counterElement = document.getElementById('counter');
+            const targetValue = 25; // Change this to your desired number
+            const duration = 2000; // Duration in milliseconds
+            const steps = 50;
+            const stepValue = targetValue / steps;
+            let currentValue = 0;
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const interval = setInterval(() => {
+                            currentValue += stepValue;
+                            if (currentValue >= targetValue) {
+                                counterElement.textContent = targetValue;
+                                clearInterval(interval);
+                            } else {
+                                counterElement.textContent = Math.floor(currentValue);
+                            }
+                        }, duration / steps);
+                        
+                        observer.unobserve(counterElement);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            observer.observe(counterElement);
+        });
+     </script>
+</body>
+</html>
