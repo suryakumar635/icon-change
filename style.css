@@ -28,6 +28,7 @@ body {
   margin: 0 0.3rem;
 }
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -92,9 +93,9 @@ body {
   transition: all 0.3s ease;
 }
 
-.donate-btn1 i {
+/* .donate-btn1 i {
   color: #f15b2a;
-}
+} */
 
 .donate-btn1:hover,
 .donate-btn1:focus {
